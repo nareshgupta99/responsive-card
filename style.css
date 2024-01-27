@@ -19,6 +19,7 @@
     border-radius: 10px;
     box-shadow: 5px 5px  black;
     padding: 10px 10px;
+    transition: box-shadow 0.4s ease; 
     
 }
 .image img{
@@ -60,22 +61,32 @@
 }
 .creater{
     margin-top:12px;
+    display: flex;
     
 }
 .creater .image{
     height: 30px;
     width: 30px;
-    display: inline-block;
 }
 .creater h4{
-    display: inline;
+  margin-left: 5px;
     font-size: 14px;
     
 }
-.heading:hover {
+
+/* .heading:hover {
+    color:  rgb(245,208,78);
+  
+} */
+
+.card .heading:hover {
     color:  rgb(245,208,78);
   
 }
+.card:hover {
+    box-shadow: 10px 10px  black; /* Increase box-shadow on hover */
+  }
+
 
 @media only Screen and (max-width:440px){
     .card{
